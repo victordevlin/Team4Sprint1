@@ -9,50 +9,26 @@
         <!-- Header with Logo -->
     <header>
         <img src="images/logo.png" alt="Outdoor Exploration Logo" class="logo">
-        <h1>What's Your Next Exploration?</h1>
-              <!-- Links styled as buttons for articles -->
-        <nav class="menu">
-            <button onclick="loadContent('forest')">Forest</button>
-                <button onclick="loadContent('mountain')">Mountain</button>
-                <button onclick="loadContent('falls')">Falls</button>
-                <button onclick="loadContent('ferry')">Ferry</button>
-                <button onclick="loadContent('lake')">Lake</button>
-                <button onclick="loadContent('park')">Park</button>
-            </nav>
+        <h1>What's Your Next Adventure?</h1>
     </header>
 
-      <!-- Squirrel image for main page view -->
+    <!-- Squirrel image for main page view -->
     <img id="squirrel-image" src="images/outdoors.jpg" alt="Outdoor Adventure" />
-   
-    <!-- Introduction and content area for articles-->
-    <div id="content">
-        <!-- Default introduction content & other articles will load here via JS-->
+    <!-- Links styled as buttons for articles -->
+    <div class="menu">
+        <button onclick="loadContent('forest')">Forest</button>
+        <button onclick="loadContent('mountain')">Mountain</button>
+        <button onclick="loadContent('falls')">Falls</button>
+        <button onclick="loadContent('ferry')">Ferry</button>
+        <button onclick="loadContent('lake')">Lake</button>
+        <button onclick="loadContent('park')">Park</button>
     </div>
-      <footer>
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h2>About Us</h2>
-                <p>Outdoor Adventures is your go-to source for exploring the natural beauty of Washington State. Our mission is to inspire and guide you through the best outdoor experiences the state has to offer.</p>
-            </div>
-            <div class="footer-section links">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#" onclick="loadContent('forest')">Forest</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-section contact">
-                <h2>Contact Us</h2>
-                <p>Email: info@outdooradventures.com</p>
-                <p>Phone: (206) 456-7890</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2024 Outdoor Adventures | Designed by Your Name
-        </div>
-    </footer>
+ 
+    <!-- Introduction and content area -->
+    <div id="content">
+        <!-- Default introduction content will load here -->
+    </div>
+
 
     <script src="scripts/myscripts.js"></script>
 </body>
