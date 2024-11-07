@@ -4,6 +4,32 @@ background-color: rgb(244, 240, 234);
 
 }
 
+/* Header and Logo */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #3c8be5;
+    padding: 20px;
+    margin-bottom: 5%;
+    /* justify-content: space-evenly; */
+}
+
+header h1 {
+    color: rgb(216, 214, 214);
+    font-size: 3.5em;
+    /* margin-right: 20%; */
+}
+
+.logo {
+    width: 12em;
+    height: auto;
+    margin: 0 15% 0 5%;
+    border-radius: 100px;
+
+
+}
+
+
 /* Basic style for buttons */
 button {
     display: inline-block;
@@ -28,7 +54,7 @@ button:hover {
     font-size: 18px;
     margin-top: 20px;
     padding: 12px 24px;
-    display: none;  /* Hidden by default */
+    display: none; 
 }
 
 /* Centering the article navigation using Flexbox */
