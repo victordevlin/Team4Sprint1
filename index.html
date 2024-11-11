@@ -1,35 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outdoor Adventures</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
 
-        <!-- Header with Logo -->
+<body>
+    <!-- Header with Logo and Navigation -->
     <header>
-        <img src="images/logo.png" alt="Outdoor Exploration Logo" class="logo">
-        <h1>What's Your Next Adventure?</h1>
+        <div class="header-top">
+            <img src="images/logo.png" alt="Outdoor Exploration Logo" class="logo">
+            <h1>What's Your Next Adventure?</h1>
+        </div>
+        <nav class="navbar">
+            <div class="dropdown">
+                <a href="content/forest.html" class="dropbtn">Forest</a>
+                <div class="dropdown-content">
+                    <a href="content/forest-locations.html">Forest Locations</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="content/mountain.html" class="dropbtn">Mountain</a>
+                <div class="dropdown-content">
+                    <a href="content/mountain-locations.html">Mountain Locations</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="content/falls.html" class="dropbtn">Falls</a>
+                <div class="dropdown-content">
+                    <a href="content/falls-locations.html">Falls Locations</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="content/ferry.html" class="dropbtn">Ferry</a>
+                <div class="dropdown-content">
+                    <a href="content/ferry-locations.html">Ferry Locations</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="content/lake.html" class="dropbtn">Lake</a>
+                <div class="dropdown-content">
+                    <a href="content/lake-locations.html">Lake Locations</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="content/park.html" class="dropbtn">Park</a>
+                <div class="dropdown-content">
+                    <a href="content/park-locations.html">Park Locations</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- Squirrel image for main page view -->
-    <img id="squirrel-image" src="images/outdoors.jpg" alt="Outdoor Adventure" />
-    <!-- Links styled as buttons for articles -->
-    <div class="menu">
-        <button onclick="loadContent('forest')">Forest</button>
-        <button onclick="loadContent('mountain')">Mountain</button>
-        <button onclick="loadContent('falls')">Falls</button>
-        <button onclick="loadContent('ferry')">Ferry</button>
-        <button onclick="loadContent('lake')">Lake</button>
-        <button onclick="loadContent('park')">Park</button>
+    <div class="article-lead">
+        <h2 class="article-title">Welcome to Outdoor Adventures!</h2>
+        <!-- Page article-title> main image -->
+        <img id="mainpg-image" src="images/outdoors.jpg" alt="Outdoor Adventure" />
     </div>
- 
+
+
+
     <!-- Introduction and content area -->
     <div id="content">
-        <!-- Default introduction content will load here -->
+        <main>
+            <p>Explore the breathtaking beauty of Washington State with our collection of articles, covering a range of
+                outdoor adventures for every type of enthusiast. From lush forests and majestic mountains to serene
+                lakes and scenic parks, each destination offers something truly special.</p>
+            <p>Every category provides in-depth guides and tips to help you make the most of your adventure. Simply
+                click on any adventure type above to uncover popular locations and activities, whether you're planning a
+                weekend getaway or a day trip. Our articles give you everything you need to plan the perfect outdoor
+                experience.</p>
+            <p>Our mission is to inspire you to explore Washington's natural wonders and create unforgettable memories.
+                So, pack your bags, lace up your hiking boots, and prepare for an incredible journey. Let the beauty of
+                nature refresh your spirit and ignite your sense of adventure.</p>
+        </main>
     </div>
-
-
-    <script src="scripts/myscripts.js"></script>
 </body>
+
 </html>
