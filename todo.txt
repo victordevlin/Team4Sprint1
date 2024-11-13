@@ -1,0 +1,8 @@
+Future cycles need to create issues & 
+
+1.  change table of contents to Home Page on all .html files in content folder
+2. in content folder .html files surround article with <div id="content">  </div>
+3. make logo link to index.html
+4. remove styling from <ul></ul> & <li></li> from links in content articles
+5. increase font size menu nav 
+6. remove navbar from inside header place below to take entire lenbth of screen
