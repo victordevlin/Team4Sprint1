@@ -1,9 +1,11 @@
+Name:  Hello World
+
 # Event
 
     on:
         push:
          branch:    
-            main
+           - main
 
             pull_request:
                 branch:
