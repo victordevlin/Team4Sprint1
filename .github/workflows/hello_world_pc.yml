@@ -1,1 +1,26 @@
+# Event
 
+    on:
+        push:
+         branch:    
+            main
+
+            pull_request:
+                branch:
+                 -main
+
+
+
+
+                 workflow_dispatch:
+ 
+                 #Workflow_ / Jobs
+
+                 jobs:
+                  hello:
+                    runs-on:  ubuntu-latest
+                    steps:
+                    -uses:  actions/checkout@v4
+                    -name:  Hello
+                    run:  echo "Hello World"
+                    shell: bash
