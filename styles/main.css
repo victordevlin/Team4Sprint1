@@ -6,6 +6,7 @@ html {
 body {
     margin: 0;
     background-color: #f5f5f5;
+    font-weight: 300;
 }
 
 
@@ -121,25 +122,80 @@ header {
 /* Sidebar */
 .sidebar {
     flex: 1;
-    margin-right: 2px;
+    margin-right: 20px;
     border-right: solid .5px rgba(128, 128, 128, 0.244);
+    padding: 20px;
 }
 
-.latest-articles,
-.social-links {
-    margin: 10em 0 0;
-    padding: 1em 2em;
+.latest-articles, .social-links {
+margin-top: 7em;
 }
-.latest-articles,
+
+/* Latest Articles */
+.latest-articles a {
+    display: block;
+    padding: 1em 0;
+    color: #0d6182;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.244);
+}
+
+.latest-articles .social-links {
+   margin-top: 7em;
+}
+
+.latest-articles a:hover {
+    color: #39853d;
+}
+
+.latest-articles h2 {
+    font-weight: 500;
+}
+
+/* Social Links */
+.social-links ul {
+    display: block;
+    padding: 1em 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.social-links li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: #0d6182;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.social-links a:hover {
+    color: #39853d;
+    background-color: #0d61821e;
+}
+
+.social-links i {
+    margin-right: 10px;
+}
+
 .social-links h2 {
-    color: rgba(13, 97, 130, 0.925);
+    font-weight: 500;
 }
 
-.social-links {
-margin-top: 10em;
-    border-top: solid 1px rgba(0, 100, 0, 0.193);
+.current-weather {
+    margin-top: 8.5em;
 }
 
+.current-weather h2 {
+    font-weight: 500;
+}
+
+.main-container h2 {
+    margin-top: 2em;
+}
 /* Main Content */
 .content {
     flex: 3;
@@ -153,7 +209,8 @@ margin-top: 10em;
 /* Font styling */
 .article-title {
     font-size: 2.7em;
-    color: #284829b2;
+    color: #284829d7;
+    font-weight: 300;
 }
 
 p {
@@ -162,6 +219,8 @@ p {
     display: block;
     margin: 20px auto;
     width: 60%;
+    font-weight: 350;
+    color: rgb(66, 66, 66);
 }
 
 .article-lead {
@@ -169,9 +228,6 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     gap: 100%;
-    /* display: block;
-    margin: 5em auto; */
-    /* width:75%;  */
 }
 
 .article-image img {
@@ -224,7 +280,7 @@ footer ul {
 footer ul li a {
     /* padding: 3px 3px; */
     /* background-color: #79670aad; */
-    color: whitesmoke;
+ 
     text-decoration: none;
     font-size: 1.1em;
 }
@@ -264,12 +320,14 @@ footer {
 .footer-section h2 {
     font-size: 1.5em;
     margin-bottom: 35px;
+    font-weight: 400;
 }
 
 .footer-section p,
 .footer-section ul {
     font-size: 1em;
     line-height: 1.6;
+    color: whitesmoke;
 }
 
 .footer-section ul {
@@ -298,4 +356,94 @@ footer {
 .footer-bottom {
     margin-top: 1px;
     font-size: 0.9em;
+}
+
+/* Responsive Styling */
+/* Media Queries for Responsive Design */
+@media (max-width: 2560px) {
+    .main-container {
+        max-width: 80%;
+    }
+
+    .article-image img {
+        max-width:65%;
+    }
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1920px) {
+    .main-container {
+        max-width: 100%;
+    }
+
+    .article-image img {
+        max-width: 65%;
+    }
+
+        .hamburger {
+            display: none;
+        }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar a,
+    .dropbtn {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar a::after,
+    .dropbtn::after {
+            content: '';
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: 2;
+        margin-right: 0;
+        border-right: none;
+        border-top: solid .5px rgba(128, 128, 128, 0.244);
+        padding-top: 20px;
+    }
+
+    .content {
+        order: 1;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .article-title {
+        font-size: 1.4em;
+        color: #284829d7;
+    }
+
+    .article-image img {
+        /* width: 95%; */
+        max-width: 80%;
+    }
+
+    p {
+        width: 80%;
+    }
 }
