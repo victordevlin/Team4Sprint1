@@ -1,113 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outdoor Adventures</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Outdoor Adventures</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 
-<body>
-    <!-- Header with Logo and Navigation -->
-    <header>
-        <div class="header-top">
-            <a href="index.html"><img Id="logo" src="images/logo.png" alt="Outdoor Exploration Logo"></a>
-            <nav class="navbar">
-                <div class="dropdown">
-                    <a href="content/forest.html" class="dropbtn">Forest <i class="fa fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="content/forest-locations.html">Forest Locations</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="content/mountain.html" class="dropbtn">Mountain <i class="fa fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="content/mountain-locations.html">Mountain Locations</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="content/falls.html" class="dropbtn">Falls <i class="fa fa-caret-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="content/falls-locations.html">Falls Locations</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="content/ferry.html" class="dropbtn">Ferry <i class="fa fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="content/ferry-locations.html">Ferry Locations</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="content/lake.html" class="dropbtn">Lake <i class="fa fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="content/lake-locations.html">Lake Locations</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="content/park.html" class="dropbtn">Park <i class="fa fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="content/park-locations.html">Park Locations</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="content/aboutus.html">About Us
-                    </a>
-                </div>
-            </nav>
+    <body>
+        <!-- Header with Logo and Navigation -->
+  <header>
+    <div class="header-top">
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="Outdoor Exploration Logo"></a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
         </div>
-      
-    </header>
-
-    <div class="article-lead">
-        <h2 class="article-title">Welcome to Outdoor Adventures!</h2>
-        <!-- Page article-title> main image -->
-        <img id="mainpg-image" src="images/outdoors.jpg" alt="Outdoor Adventure" />
+        <nav class="navbar">
+            <div class="dropdown">
+                <a href="content/forest.html" class="dropbtn">Forest <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="content/forest-locations.html">Forest Locations</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="content/mountain.html" class="dropbtn">Mountain <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="content/mountain-locations.html">Mountain Locations</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="content/falls.html" class="dropbtn">Falls <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="content/falls-locations.html">Falls Locations</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="content/ferry.html" class="dropbtn">Ferry <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="content/ferry-locations.html">Ferry Locations</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="content/lake.html" class="dropbtn">Lake <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="content/lake-locations.html">Lake Locations</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="content/park.html" class="dropbtn">Park <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="content/park-locations.html">Park Locations</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="content/aboutus.html">About Us</a>
+            </div>
+        </nav>
     </div>
+</header>
+        <!-- main container -->
+        <div class="main-container">
+        
+        <!-- Sidebar Container -->
+        <aside class="sidebar">
+            <div class="latest-articles">
+                <h2>Latest Articles</h2>
+                <!-- Latest articles content -->
+                 <!-- !! TEAM MEMBERS Change 1st Link to Home page !! -->
+                <a href="content/forest.html">Forest Activities</a>
+                <a href="content/mountain-locations.html">Mountain Locations</a>
+                <a href="content/falls-locations.html">Falls Locations</a>
+                <a href="content/ferry.html">Ferry Destinations</a>
+            </div>
+            <div class="social-links">
+                <h2>Follow Us</h2>
+                <!-- Social networking links -->
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa fa-times"></i>Connect on X</a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+            <!-- Weather script -->
+            <div class="current-weather">
+                <h2>Weather Forecast</h2>
+            <div id="ww_4cfede5e1c465" v='1.3' loc='id'
+                a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":["wl3620"],"font":"Arial","sl_ics":"one_a","sl_sot":"fahrenheit","cl_bkg":"#FFFFFF","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#0000000a"}'>
+                More forecasts: <a href="https://oneweather.org/new_york_city/30_days/" id="ww_4cfede5e1c465_u" target="_blank">NYC
+                    weather forecast 30 days</a></div>
+            <script async src="https://app3.weatherwidget.org/js/?id=ww_4cfede5e1c465"></script>
+            </div>
+        </aside>
 
-
-
-    <!-- Introduction and content area -->
-   
-        <main class="content">
-            <p>Explore the breathtaking beauty of Washington State with our collection of articles, covering a range of
-                outdoor adventures for every type of enthusiast. From lush forests and majestic mountains to serene
-                lakes and scenic parks, each destination offers something truly special.</p>
-            <p>Every category provides in-depth guides and tips to help you make the most of your adventure. Simply
-                click on any adventure type above to uncover popular locations and activities, whether you're planning a
-                weekend getaway or a day trip. Our articles give you everything you need to plan the perfect outdoor
-                experience.</p>
-            <p>Our mission is to inspire you to explore Washington's natural wonders and create unforgettable memories.
-                So, pack your bags, lace up your hiking boots, and prepare for an incredible journey. Let the beauty of
-                nature refresh your spirit and ignite your sense of adventure.</p>
-        </main>
-        <footer>
+        
+            <!-- Introduction and content area -->
+            <main class="content">
+                <!-- Article title -->
+                <div class="article-lead">
+                    <h2 class="article-title">Welcome to Outdoor Adventures!</h2>
+                </div>
+                <div class="article-image">
+                    <!-- Page article-title> main image -->
+                    <img src="images/outdoors.jpg" alt="Outdoor Adventure" />
+                </div>
+                <p>Explore the breathtaking beauty of Washington State with our collection of articles, covering a range of
+                    outdoor adventures for every type of enthusiast. From lush forests and majestic mountains to serene
+                    lakes and scenic parks, each destination offers something truly special.</p>
+                <p>Every category provides in-depth guides and tips to help you make the most of your adventure. Simply
+                    click on any adventure type above to uncover popular locations and activities, whether you're planning a
+                    weekend getaway or a day trip. Our articles give you everything you need to plan the perfect outdoor
+                    experience.</p>
+                <p>Our mission is to inspire you to explore Washington's natural wonders and create unforgettable memories.
+                    So, pack your bags, lace up your hiking boots, and prepare for an incredible journey. Let the beauty of
+                    nature refresh your spirit and ignite your sense of adventure.</p>
+            </main>
+        </div>
+        <!-- Footer Section -->
+             <footer>
             <div class="footer-content">
                 <div class="footer-section about">
-            
-                    
+                    <h2>About Us</h2>
+                    <p>Outdoor Adventures is your go-to source for exploring the natural beauty of Washington State. Our
+                        mission
+                        is to</p>
+                    <a class="read-more" href="content/aboutus.html">Read More</a>
                 </div>
                 <div class="footer-section links">
-           
-                    
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home Page</a></li>
+                        <li><a href="content/park-locations.html">Park Locations</a></li>
+                        <li><a href="#">Contact Us Form</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section contact">
-                  
-                   
+                    <h2>Contact Us</h2>
+                    <p>Email: info@outdooradventures.com</p>
+                    <p>Phone: (999) 555-5555</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                © 2024 Outdoor Adventures | Designed by Our Group Name
+                © 2024 Outdoor Adventures | Designed by The Annihilators
             </div>
         </footer>
-
-
-</body>
-
+        <!-- JavaScript for Toggling Menu -->
+        <script>
+            function toggleMenu() {
+                var navbar = document.querySelector('.navbar');
+                if (navbar.style.display === 'flex') {
+                    navbar.style.display = 'none';
+                } else {
+                    navbar.style.display = 'flex';
+                }
+            }
+        </script>
+    </body>
 </html>
