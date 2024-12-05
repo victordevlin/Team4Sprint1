@@ -359,8 +359,8 @@ footer {
 }
 
 /* Responsive Styling */
-/* Media Queries for Responsive Design */
-@media (max-width: 2560px) {
+/* Media Queries for XL screens Responsive Design */
+@media (max-width: 3400px) {
     .main-container {
         max-width: 80%;
     }
@@ -368,16 +368,19 @@ footer {
     .article-image img {
         max-width:65%;
     }
-}
 
 /* Hamburger Menu */
-.hamburger {
-    display: none;
-    font-size: 2em;
-    cursor: pointer;
+    .hamburger {
+        display: none;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    .navbar {
+        margin-right: 34.5em;
+    }
 }
 
-
+/* Media Queries for Lg sreens Responsive Design */
 @media (max-width: 1920px) {
     .main-container {
         max-width: 100%;
@@ -390,9 +393,27 @@ footer {
         .hamburger {
             display: none;
         }
+
+        .navbar {
+            margin-right: 16em;
+        }
 }
 
-/* Media Queries for Responsive Design */
+/* Media Queries for Phone tablet Responsive Design */
+@media (max-width: 1600px) {
+    .navbar {
+        margin-right: 9em;
+    }
+}
+
+/* Media Queries for Phone tablet Responsive Design */
+@media (max-width: 1440px) {
+   .navbar {
+       margin-right: 3em;
+   }
+}
+
+/* Media Queries for Phone tablet Responsive Design */
 @media (max-width: 1200px) {
     .navbar {
         display: none;
