@@ -1,70 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Welcome to the Wilderness!</title>
-<link rel="stylesheet" type="text/css" href="styles/main.css">
-<script src="scripts/myscripts.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Ferry Locations</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+    <!-- Header with Logo and Navigation -->
+    <header>
+        <div class="header-top">
+            <a href="../index.html"><img id="logo" src="../images/logo.png" alt="Outdoor Exploration Logo"></a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav class="navbar">
+                <div class="dropdown">
+                    <a href="forest.html" class="dropbtn">Forest <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="forest-locations.html">Forest Locations</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="mountain.html" class="dropbtn">Mountain <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="mountain-locations.html">Mountain Locations</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="falls.html" class="dropbtn">Falls <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="falls-locations.html">Falls Locations</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="ferry.html" class="dropbtn">Ferry <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="ferry-locations.html">Ferry Locations</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="lake.html" class="dropbtn">Lake <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="lake-locations.html">Lake Locations</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="park.html" class="dropbtn">Park <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="park-locations.html">Park Locations</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="aboutus.html">About Us</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- main container -->
+    <div class="main-container">
 
-<h1>Popular Ferry Trip Locations</h1>
-
-<h2><eM>Go Visit</em></h2>
-<b>Seattle To Bainbridge Island
-<br>
-Seattle To Bremerton
-<br>
-Fauntleroy to Vashon Island
-<br>
-Ferries to the Olympic Peninsula</b>
-<br>
-<br>
-
-<b>Things to do at Bainbridge Island:</b>
-<br>
-<ul>
-<li>Bainbridge Island Museum of Art</li>
-<li>Check out Frog Rock</li>
-<li>Enjoy the sand beach at Pritchard Park</li>
-<li>Bainbridge Island Japanese American Exclusion Memorial</li>
-</ul>
-<br>
-<b>Things to do at Bremerton:</b>
-<ul>
-<li>Harborside Fountain Park
-<li>Check out the outdoor art
-<li>Vintage Flea Market
-<li>Port Orchard foot ferry
-</ul>
-<br>
-<b>Things to do at Vashon Island:</b>
-<ul>
-<li> Maury Island Marine Park
-<li> Old Bicycle In The Tree
-<li> Kayak Lisabuela Beach
-<li> Go to the Farmer's Market
-</ul>
-<br>
-<b>Things to do at Olympic Peninsula:</b>
-<br>
-<ul>
-<li>Go hiking in the Rain Forest at Olympic National Park
-<li>Rialto Beach
-<li>Paddleboard Lake Crescent
-<li>Go sniffing around Sequim for Lavendar Festival
-</ul>
-<br>
+        <!-- Sidebar Container -->
+        <aside class="sidebar">
+            <div class="latest-articles">
+                <h2>Latest Articles</h2>
+                <!-- Latest articles content -->
+                <a href="../index.html">Home</a>
+                <a href="mountain-locations.html">Mountain Locations</a>
+                <a href="falls-locations.html">Falls Locations</a>
+                <a href="ferry.html">Ferry Destinations</a>
+            </div>
+            <div class="social-links">
+                <h2>Follow Us</h2>
+                <!-- Social networking links -->
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa fa-times"></i>Connect on X</a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+            <!-- Weather script -->
+            <div class="current-weather">
+                <h2>Weather Forecast</h2>
+                <div id="ww_4cfede5e1c465" v='1.3' loc='id'
+                    a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":["wl3620"],"font":"Arial","sl_ics":"one_a","sl_sot":"fahrenheit","cl_bkg":"#FFFFFF","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#0000000a"}'>
+                    More forecasts: <a href="https://oneweather.org/new_york_city/30_days/" id="ww_4cfede5e1c465_u"
+                        target="_blank">NYC
+                        weather forecast 30 days</a></div>
+                <script async src="https://app3.weatherwidget.org/js/?id=ww_4cfede5e1c465"></script>
+            </div>
+        </aside>
 
 
-<ul>
-<li><a href="index.html">Table of Contents</a></li>
-</ul>
+        <!-- Introduction and content area -->
 
+    <main class="content">
+        <!-- Article title -->
+        <div class="article-lead">
+            <h2 class="article-title">Popular Ferry Locations</h2>
+        </div>
+        <div class="article-image">
+            <!-- Page article-title> main image -->
+            <img src="../images/ferry2.jpg" alt="Popular Ferry Spots"/>
+        </div>
+        
+<!-- Article title -->
+<div class="article-lead">
+    <h2 class="article-title">Popular Trips:</h2>
+</div>
+    
+<p>Seattle To Bainbridge Island</p>
+<p>Seattle To Bremerton</p>
+<p>Fauntleroy to Vashon Island</b>
+<p>Ferries to the Olympic Peninsula</b>
 
+    <!-- Article title -->
+<div class="article-lead">
+    <h2 class="article-title">Things to do at Bainbridge Island:</h2>
+</div>
 
+<p>Bainbridge Island Museum of Art</p>
+<p>Check out Frog Rock</p>
+<p>Enjoy the sand beach at Pritchard Park</p>
+<p>Bainbridge Island Japanese American Exclusion Memorial</p>
+
+<    <!-- Article title -->
+<div class="article-lead">
+    <h2 class="article-title">Things to do at Bremerton:</h2>
+</div>
+
+<p>Harborside Fountain Park</p>
+<p>Check out the outdoor art</p>
+<p>Vintage Flea Market</p>
+<p>Port Orchard foot ferry</p>
+
+   <!-- Article title -->
+   <div class="article-lead">
+    <h2 class="article-title">Things to do at Vashon Island:</h2>
+</div>
+
+<p>Maury Island Marine Park</p>
+<p>Old Bicycle In The Tree</p>
+<p>Kayak Lisabuela Beach</p>
+<p>Go to the Farmer's Market</p>
+
+   <!-- Article title -->
+   <div class="article-lead">
+    <h2 class="article-title">Things to do at Olympic National Park:</h2>
+</div>
+
+<p>Go hiking in the Rain Forest at Olympic National Park</p>
+<p>Rialto Beach</p>
+<p>Paddleboard Lake Crescent</p>
+<p>Go sniffing around Sequim for Lavendar Festival</p>
+</main></div>
+
+ <!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>Outdoor Adventures is your go-to source for exploring the natural beauty of Washington State.</p>
+            <a class="read-more" href="aboutus.html">Read More</a>
+        </div>
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="../index.html">Home Page</a></li>
+                <li><a href="park-locations.html">Park Locations</a></li>
+                <li><a href="#">Join our Team</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@outdooradventures.com</p>
+            <p>Phone: (999) 555-5555</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2024 Outdoor Adventures | Designed by The Annihilators
+    </div>
+</footer>
+<!-- JavaScript for Toggling Menu -->
+<script>
+    function toggleMenu() {
+        var navbar = document.querySelector('.navbar');
+        if (navbar.style.display === 'flex') {
+            navbar.style.display = 'none';
+        } else {
+            navbar.style.display = 'flex';
+        }
+    }
+</script>
 </body>
+
 </html>
-
-
 
