@@ -1,79 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Behold Nature's Beauty!</title>
-    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <!-- Header with Logo and Navigation -->
     <header>
         <div class="header-top">
-            <img src="../images/logo.png" alt="Outdoor Exploration Logo" class="logo">
-            <h1>What's Your Next Adventure?</h1>
+            <a href="../index.html"><img id="logo" src="../images/logo.png" alt="Outdoor Exploration Logo"></a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav class="navbar">
+                <div class="dropdown">
+                    <a href="forest.html" class="dropbtn">Forest <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="forest-locations.html">Forest Locations</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="mountain.html" class="dropbtn">Mountain <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="content/mountain-locations.html">Mountain Locations</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="content/falls.html" class="dropbtn">Falls <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="content/falls-locations.html">Falls Locations</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="content/ferry.html" class="dropbtn">Ferry <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="content/ferry-locations.html">Ferry Locations</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="content/lake.html" class="dropbtn">Lake <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="content/lake-locations.html">Lake Locations</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="content/park.html" class="dropbtn">Park <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="content/park-locations.html">Park Locations</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="content/aboutus.html">About Us</a>
+                </div>
+            </nav>
         </div>
-        <nav class="navbar">
-            <div class="dropdown">
-                <a href="forest.html" class="dropbtn">Forest</a>
-                <div class="dropdown-content">
-                    <a href="forest-locations.html">Forest Locations</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="mountain.html" class="dropbtn">Mountain</a>
-                <div class="dropdown-content">
-                    <a href="mountain-locations.html">Mountain Locations</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="falls.html" class="dropbtn">Falls</a>
-                <div class="dropdown-content">
-                    <a href="falls-locations.html">Falls Locations</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="ferry.html" class="dropbtn">Ferry</a>
-                <div class="dropdown-content">
-                    <a href="ferry-locations.html">Ferry Locations</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="lake.html" class="dropbtn">Lake</a>
-                <div class="dropdown-content">
-                    <a href="lake-locations.html">Lake Locations</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="park.html" class="dropbtn">Park</a>
-                <div class="dropdown-content">
-                    <a href="park-locations.html">Park Locations</a>
-                </div>
-            </div>
-        </nav>
     </header>
-    <div class="article-lead">
-        <h2 class="article-title">The Sparkling Waters</h2>
-        <img id="mainpg-image" src="../images/waterfall.jpg" alt="Ranger Falls" onmouseover="showAlt(this)"
-            onmouseout="hideAlt(this)">
-        <figcaption>Take in the Scenery</figcaption>
+    <!-- main container -->
+    <div class="main-container">
+
+        <!-- Sidebar Container -->
+        <aside class="sidebar">
+            <div class="latest-articles">
+                <h2>Latest Articles</h2>
+                <!-- Latest articles content -->
+                <a href="index.html">Home</a>
+                <a href="content/mountain-locations.html">Mountain Locations</a>
+                <a href="content/falls-locations.html">Falls Locations</a>
+                <a href="content/ferry.html">Ferry Destinations</a>
+            </div>
+            <div class="social-links">
+                <h2>Follow Us</h2>
+                <!-- Social networking links -->
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa fa-times"></i>Connect on X</a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+            <!-- Weather script -->
+            <div class="current-weather">
+                <h2>Weather Forecast</h2>
+                <div id="ww_4cfede5e1c465" v='1.3' loc='id'
+                    a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":["wl3620"],"font":"Arial","sl_ics":"one_a","sl_sot":"fahrenheit","cl_bkg":"#FFFFFF","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#0000000a"}'>
+                    More forecasts: <a href="https://oneweather.org/new_york_city/30_days/" id="ww_4cfede5e1c465_u"
+                        target="_blank">NYC
+                        weather forecast 30 days</a></div>
+                <script async src="https://app3.weatherwidget.org/js/?id=ww_4cfede5e1c465"></script>
+            </div>
+        </aside>
+
+
+        <!-- Introduction and content area -->
+        <main class="content">
+            <!-- Article title -->
+            <div class="article-lead">
+                <h2 class="article-title">The Sparkling Waters</h2>
+            </div>
+            <div class="article-image">
+                <!-- Page article-title> main image -->
+                <img src="../images/waterfall.jpg" alt="Outdoor Adventure" />
+            </div>
+            <p>Explore the breathtaking beauty of Washington State with our collection of articles, covering a range of
+                outdoor adventures for every type of enthusiast. From lush forests and majestic mountains to serene
+                lakes and scenic parks, each destination offers something truly special.</p>
+            <p>Every category provides in-depth guides and tips to help you make the most of your adventure. Simply
+                click on any adventure type above to uncover popular locations and activities, whether you're planning a
+                weekend getaway or a day trip. Our articles give you everything you need to plan the perfect outdoor
+                experience.</p>
+            <p>Our mission is to inspire you to explore Washington's natural wonders and create unforgettable memories.
+                So, pack your bags, lace up your hiking boots, and prepare for an incredible journey. Let the beauty of
+                nature refresh your spirit and ignite your sense of adventure.</p>
+        </main>
     </div>
-
-
-    <ul>
-        <li><a href="../index.html">Table of Contents</a></li>
-    </ul>
-
-
-    <p>If you’re a photographer or planning a family trip this weekend, consider visiting Ranger Falls near Mount
-        Rainier National Park. This stunning waterfall is hidden in the lush, old-growth forests of the park, featuring
-        a dramatic, multi-tiered cascade where water tumbles over moss-covered rocks and fallen logs. The surrounding
-        forest, with its towering evergreens, ferns, and wildflowers, provides a serene, picturesque backdrop along the
-        trail. Accessible from the Carbon River area, the moderate hike to Ranger Falls follows the Carbon River Road
-        and Green Lake Trail. The sound of rushing water and cool mist in the air make it an ideal spot for capturing
-        beautiful moments and unwinding in nature.</p>
-
-
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Outdoor Adventures is your go-to source for exploring the natural beauty of Washington State.</p>
+                <a class="read-more" href="aboutus.html">Read More</a>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="content/park-locations.html">Park Locations</a></li>
+                    <li><a href="#">Join our Team</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@outdooradventures.com</p>
+                <p>Phone: (999) 555-5555</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 Outdoor Adventures | Designed by The Annihilators
+        </div>
+    </footer>
+    <!-- JavaScript for Toggling Menu -->
+    <script>
+        function toggleMenu() {
+            var navbar = document.querySelector('.navbar');
+            if (navbar.style.display === 'flex') {
+                navbar.style.display = 'none';
+            } else {
+                navbar.style.display = 'flex';
+            }
+        }
+    </script>
 </body>
 
 </html>
